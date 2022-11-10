@@ -1,18 +1,16 @@
-## Getting Started
+# Aprendendo a Sintaxe Java
+<p>Essa pasta contém códigos anotados a partir das aulas de 'Anatomia das Classes', ministradas por Gleyson Sampaio, através do Bootcamp da DIO.</p>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<br>
 
-## Folder Structure
+## Anatomia das Classes
+_Conteúdo das aulas:_
+- Padrão de nomenclatura
+- Declarando variáveis e métodos
+- Indentação (indentation)
+- Organizando arquivos
+- Java Beans
 
-The workspace contains two folders by default, where:
+<br>
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+_Bibliografia: https://glysns.gitbook.io/java-basico/sintaxe/anatomia-das-classes_
