@@ -1,3 +1,4 @@
+package edu.livia.anatomiadasclasses;
 public class Quadrado {
 
     double lado;
@@ -7,9 +8,10 @@ public class Quadrado {
         return quantidade;
     }
 
-    public void calculaArea2(){
+    public double retornaArea(){
         double area = lado*lado;
         quantidade++;
+        return area;
     }
     
 }

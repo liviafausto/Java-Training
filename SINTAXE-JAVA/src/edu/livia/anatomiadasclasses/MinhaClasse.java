@@ -1,3 +1,4 @@
+package edu.livia.anatomiadasclasses;
 public class MinhaClasse {
     final String BR = "Brasil"; //variável toda maiúscula = imutável
 
