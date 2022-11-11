@@ -13,5 +13,13 @@ public class Quadrado {
         quantidade++;
         return area;
     }
+
+    public static void main(String[] arg){
+        Quadrado quadrado1 = new Quadrado();
+        quadrado1.lado = 12;
+
+        double area = quadrado1.retornaArea();
+        System.out.println(area);
+    }
     
 }
