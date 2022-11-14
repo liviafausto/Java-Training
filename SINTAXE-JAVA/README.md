@@ -26,3 +26,14 @@ _Assuntos:_
 - Operadores lógicos
 
 _Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/operadores_
+
+<br>
+
+### Métodos
+- Qual a proposta principal do método?
+- Qual o tipo de retorno esperado após executar o método?
+- Quais parâmetros serão necessários para a execução do método?
+- O método possui o risco de apresentar alguma exceção?
+- Qual a visibilidade do método?
+
+_Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/metodos_
