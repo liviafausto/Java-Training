@@ -38,3 +38,14 @@ _Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/operado
 - Qual a visibilidade do método?
 
 _Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/metodos_
+
+<br>
+
+## Terminal e Argumentos
+### Assuntos:
+- main args
+- Scanner
+- Execução via IDE
+- Execução via prompt de comando
+
+_Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/terminal-e-argumentos_
