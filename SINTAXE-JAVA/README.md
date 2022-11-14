@@ -1,10 +1,10 @@
-## Aprendendo a Sintaxe Java
+# Aprendendo a Sintaxe Java
 <p>Essa pasta contém códigos anotados a partir das aulas ministradas por Gleyson Sampaio, através do Bootcamp da DIO.</p>
 
 <br>
 
-### Anatomia das Classes
-_Assuntos:_
+## Anatomia das Classes
+### Assuntos:
 - Estrutura inicial
 - Padrão de nomenclatura
 - Declarando variáveis e métodos
@@ -16,8 +16,8 @@ _Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/anatomi
 
 <br>
 
-### Operadores
-_Assuntos:_
+## Operadores
+### Assuntos:
 - Atribuição
 - Operadores aritméticos
 - Operadores unários
@@ -29,7 +29,8 @@ _Conteúdo disponível em: https://glysns.gitbook.io/java-basico/sintaxe/operado
 
 <br>
 
-### Métodos
+## Métodos
+### Assuntos:
 - Qual a proposta principal do método?
 - Qual o tipo de retorno esperado após executar o método?
 - Quais parâmetros serão necessários para a execução do método?
