@@ -1,6 +1,6 @@
 package edu.livia.aula01;
 
-public class Carro {
+public class Carro extends Veiculo {
     String cor;
     String modelo;
     int capacidadeTanque;
