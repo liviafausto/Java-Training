@@ -1,4 +1,4 @@
-package edu.livia.aula01;
+package edu.livia.estrutura_basica;
 
 public class RodarAplicacao {
 
