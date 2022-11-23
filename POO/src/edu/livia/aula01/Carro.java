@@ -1,4 +1,4 @@
-package edu.livia;
+package edu.livia.aula01;
 
 public class Carro {
     String cor;
@@ -42,8 +42,14 @@ public class Carro {
     }
 
     //Métodos de negócio
-    double retornaValorTanque(double valorCombustivel){
+    double retornarValorTanque(double valorCombustivel){
         return valorCombustivel*capacidadeTanque;
+    }
+
+    //Método de impressão de dados no terminal
+    void exibirAtributosCarro(){
+        System.out.println(modelo + " " + cor);
+        System.out.println("Capacidade: " + capacidadeTanque + "L");
     }
 
 }
