@@ -19,3 +19,7 @@
 - Herança
 - Associação
 - Interface
+
+<br>
+
+_Conteúdo disponível em: https://docs.google.com/presentation/d/1k5syUGWVoY8yJ2cDLHwhrR0kDBUUG5Ay/edit#slide=id.p2_ 
