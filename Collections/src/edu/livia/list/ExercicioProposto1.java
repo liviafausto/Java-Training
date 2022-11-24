@@ -28,15 +28,21 @@ public class ExercicioProposto1 {
 
         //calcular média semestral das temperaturas
         double media = soma/6;
-        System.out.println("\nMedia das temperaturas: " + media);
+        System.out.printf("Media das temperaturas: %.1f", media);
+        //método da professora:
+        //double media = temperaturas.stream().mapToDouble(Double::doubleValue).average().orElse(0d);
+        
 
         //mostrar quais as temperaturas acima da média semestral, e quando elas ocorreram
         System.out.println("\nTemperaturas acima da media:");
-        for(int i=0; i<6; i++){
+        for(int i=0; i<temperaturas.size(); i++){
             if(temperaturas.get(i) > media){
-                System.out.println(meses.get(i)+" - "+temperaturas.get(i));
+                System.out.println(meses.get(i) + " - " + temperaturas.get(i));
             }
         }
+
+        //método da professora:
+        //temperaturas.stream().filter(t -> t>media).forEach(t -> System.out.printf("%.1f ", t));
 
 
         scan.close();
