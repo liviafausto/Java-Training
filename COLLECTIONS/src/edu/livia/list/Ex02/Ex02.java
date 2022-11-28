@@ -1,4 +1,4 @@
-package edu.livia.list;
+package edu.livia.list.Ex02;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
