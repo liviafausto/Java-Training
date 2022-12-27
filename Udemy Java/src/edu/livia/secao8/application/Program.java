@@ -3,10 +3,9 @@ package edu.livia.secao8.application;
 //import edu.livia.secao8.entities.Triangle;
 //import edu.livia.secao8.entities.Product;
 //import edu.livia.secao8.entities.Rectangle;
+//import edu.livia.secao8.entities.Employee;
 
-import edu.livia.secao8.entities.Employee;
-
-import javax.swing.plaf.BorderUIResource;
+import edu.livia.secao8.entities.Student;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,19 +14,19 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner read = new Scanner(System.in);
 
-        Employee employee = new Employee();
+        Student student = new Student();
+        student.name = read.nextLine();
+        student.grade1 = read.nextDouble();
+        student.grade2 = read.nextDouble();
+        student.grade3 = read.nextDouble();
 
-        System.out.print("Name: ");
-        employee.name = read.nextLine();
-        System.out.print("Gross Salary: ");
-        employee.grossSalary = read.nextDouble();
-        System.out.print("Tax: ");
-        employee.tax = read.nextDouble();
-        System.out.println("Employee: " + employee);
-
-        System.out.print("Which percentage to increase salary?: ");
-        employee.increaseSalary(read.nextDouble());
-        System.out.println("Updated data: " + employee);
+        System.out.printf("FINAL GRADE = %.2f\n", student.finalGrade());
+        if(student.finalGrade() >= 60){
+            System.out.println("PASS");
+        } else {
+            System.out.println("FAILED");
+            System.out.printf("MISSING %.2f POINTS\n", student.missingPoints());
+        }
 
         read.close();
     }
@@ -91,3 +90,18 @@ public class Program {
         System.out.printf("AREA = %.2f\n", rectangle.area());
         System.out.printf("PERIMETER = %.2f\n", rectangle.perimeter());
         System.out.printf("DIAGONAL = %.2f\n", rectangle.diagonal());*/
+
+// Exercício proposto 2: ler e alterar dados de um funcionário
+/*      Employee employee = new Employee();
+
+        System.out.print("Name: ");
+        employee.name = read.nextLine();
+        System.out.print("Gross Salary: ");
+        employee.grossSalary = read.nextDouble();
+        System.out.print("Tax: ");
+        employee.tax = read.nextDouble();
+        System.out.println("Employee: " + employee);
+
+        System.out.print("Which percentage to increase salary?: ");
+        employee.increaseSalary(read.nextDouble());
+        System.out.println("Updated data: " + employee);*/
