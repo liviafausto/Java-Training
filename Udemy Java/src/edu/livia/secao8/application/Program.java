@@ -2,8 +2,11 @@ package edu.livia.secao8.application;
 
 //import edu.livia.secao8.entities.Triangle;
 //import edu.livia.secao8.entities.Product;
+//import edu.livia.secao8.entities.Rectangle;
 
-import edu.livia.secao8.entities.Rectangle;
+import edu.livia.secao8.entities.Employee;
+
+import javax.swing.plaf.BorderUIResource;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,15 +14,20 @@ public class Program {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
         Scanner read = new Scanner(System.in);
-        Rectangle rectangle = new Rectangle();
 
-        System.out.println("Enter rectangle width and height:");
-        rectangle.width = read.nextDouble();
-        rectangle.height = read.nextDouble();
+        Employee employee = new Employee();
 
-        System.out.printf("AREA = %.2f\n", rectangle.area());
-        System.out.printf("PERIMETER = %.2f\n", rectangle.perimeter());
-        System.out.printf("DIAGONAL = %.2f\n", rectangle.diagonal());
+        System.out.print("Name: ");
+        employee.name = read.nextLine();
+        System.out.print("Gross Salary: ");
+        employee.grossSalary = read.nextDouble();
+        System.out.print("Tax: ");
+        employee.tax = read.nextDouble();
+        System.out.println("Employee: " + employee);
+
+        System.out.print("Which percentage to increase salary?: ");
+        employee.increaseSalary(read.nextDouble());
+        System.out.println("Updated data: " + employee);
 
         read.close();
     }
@@ -72,3 +80,14 @@ public class Program {
         System.out.print("Enter the number of products to be removed from stock: ");
         product.removeProducts(read.nextInt());
         System.out.println("Updated data: " + product);                             */
+
+// Exercício proposto 1: calcular área, perímetro e diagonal de um retângulo
+/*      Rectangle rectangle = new Rectangle();
+
+        System.out.println("Enter rectangle width and height:");
+        rectangle.width = read.nextDouble();
+        rectangle.height = read.nextDouble();
+
+        System.out.printf("AREA = %.2f\n", rectangle.area());
+        System.out.printf("PERIMETER = %.2f\n", rectangle.perimeter());
+        System.out.printf("DIAGONAL = %.2f\n", rectangle.diagonal());*/
