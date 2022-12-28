@@ -4,8 +4,10 @@ package edu.livia.secao8.application;
 //import edu.livia.secao8.entities.Product;
 //import edu.livia.secao8.entities.Rectangle;
 //import edu.livia.secao8.entities.Employee;
+//import edu.livia.secao8.entities.Student;
 
-import edu.livia.secao8.entities.Student;
+import edu.livia.secao8.entities.CurrencyConverter;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -14,19 +16,12 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner read = new Scanner(System.in);
 
-        Student student = new Student();
-        student.name = read.nextLine();
-        student.grade1 = read.nextDouble();
-        student.grade2 = read.nextDouble();
-        student.grade3 = read.nextDouble();
-
-        System.out.printf("FINAL GRADE = %.2f\n", student.finalGrade());
-        if(student.finalGrade() >= 60){
-            System.out.println("PASS");
-        } else {
-            System.out.println("FAILED");
-            System.out.printf("MISSING %.2f POINTS\n", student.missingPoints());
-        }
+        double dollar, amount;
+        System.out.print("What is the dollar price? ");
+        dollar = read.nextDouble();
+        System.out.print("How many dollars will be bought? ");
+        amount = read.nextDouble();
+        System.out.printf("Amout to be paid in reais = %.2f\n", CurrencyConverter.convert(dollar, amount));
 
         read.close();
     }
@@ -105,3 +100,18 @@ public class Program {
         System.out.print("Which percentage to increase salary?: ");
         employee.increaseSalary(read.nextDouble());
         System.out.println("Updated data: " + employee);*/
+
+// Exercício proposto 3: calcular a média final de um aluno
+/*      Student student = new Student();
+        student.name = read.nextLine();
+        student.grade1 = read.nextDouble();
+        student.grade2 = read.nextDouble();
+        student.grade3 = read.nextDouble();
+
+        System.out.printf("FINAL GRADE = %.2f\n", student.finalGrade());
+        if(student.finalGrade() >= 60){
+            System.out.println("PASS");
+        } else {
+            System.out.println("FAILED");
+            System.out.printf("MISSING %.2f POINTS\n", student.missingPoints());
+        }                                                                           */
