@@ -25,10 +25,6 @@ public class Order {
         this.client = client;
     }
 
-    public OrderStatus getStatus(){
-        return status;
-    }
-
     public void addItem(OrderItem item){
         items.add(item);
     }
