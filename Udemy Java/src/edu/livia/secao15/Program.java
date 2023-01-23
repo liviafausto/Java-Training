@@ -25,14 +25,11 @@ public class Program {
             System.out.print("Check-in date (dd/MM/yyyy): "); in = SIMPLE_DATE.parse(read.nextLine());
             System.out.print("Check-out date (dd/MM/yyyy): "); out = SIMPLE_DATE.parse(read.nextLine());
 
-            Date now = new Date();
-            if(in.before(now) || out.before(now)){
-                System.out.println("Error in reservation: Reservation dates for update must be future dates.");
-            }
-            else if(!out.after(in)){
-                System.out.println("Error in reservation: Check-out date must be after check-in date.");
+            String error = reservation.updateDates(in, out);
+
+            if(error != null){
+                System.out.println("Error in reservation: " + error);
             } else {
-                reservation.updateDates(in, out);
                 System.out.println("Reservation: " + reservation);
             }
         }
