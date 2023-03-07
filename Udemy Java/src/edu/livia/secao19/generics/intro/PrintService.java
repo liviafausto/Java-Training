@@ -1,4 +1,4 @@
-package edu.livia.secao19.generics;
+package edu.livia.secao19.generics.intro;
 
 // Exemplo 1: Como usar o Generics em uma classe
 
