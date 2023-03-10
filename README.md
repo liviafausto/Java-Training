@@ -29,3 +29,4 @@ Projetos mais complexos, como o do Jogo de Xadrez, ficarão em repositórios sep
 - Herança e Polimorfismo - <i>Seção 14</i>;
 - Tratamento de exceções - <i>Seção 15</i>;
 - Interfaces - <i>Seção 18</i>;
+- Generics, `hashCode` e `equals`, Set e Map - <i>Seção 19</i>
